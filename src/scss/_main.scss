@@ -1018,3 +1018,77 @@
 	}
 	
 }
+
+//PRICE
+
+.signup__form-title--price{
+	margin-bottom: 73px;
+	font-size: 48px;
+	@include f700;
+	line-height: 35px;
+	span{
+		   background-image: url(../images/bg_image.jpg);
+    	background-position: center;
+    	background-repeat: repeat;
+	}
+	&::before{
+		content: '';
+		background-color: #000;
+	}
+}
+
+.price-list__content {
+	display: flex;
+	font-size: 14px;
+	line-height: 24px;
+	@include f700;
+	text-transform: uppercase;
+	color: #000000;
+	p{
+		padding-right: 100px;
+	}
+	margin-bottom: 50px;
+}
+.price-list__coll {
+	max-width: 50%;
+	width: 100%;
+}
+.price-list__title {
+	display: block;
+	font-size: 24px;
+	line-height: 30px;
+	@include f700;
+	color: #000000;
+	margin-bottom: 31px;
+
+}
+.price-list__ul {
+	li{
+		margin-bottom: 13px;
+		padding-left: 21px;
+		position: relative;
+		&::before{
+			content: '';
+    		display: block;
+   			width: 8px;
+    		height: 8px;
+    		background-color: #000000;
+    		position: absolute;
+    		left: 0;
+    		top: 7px;
+    		transform: rotate(45deg);
+		}
+	}
+}
+.price-list__table {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+.price-list__table-type {
+	padding: 8px 19px;
+	width: 50%;
+}
+.price-list__table-sum {
+	width: 50%;
+	text-align: center;
+}
