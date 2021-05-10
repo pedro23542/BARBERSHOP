@@ -20,6 +20,9 @@
 		color: #ffffff;
 	}
 }
+.mobile-nav{
+	display: none;
+}
 .header__nav{
 	display: flex;
 	& .bottom-line{
@@ -359,11 +362,11 @@
 .reviews__slider-img {
 	min-width: 249px;
     max-width: 249px;
-    height: 160px;
 }
 .reviews__slider-content {
 	border: 1px solid #e5ddd5;
 	padding: 35px 79px 20px 70px;
+	min-height: 169px;
 }
 .reviews__slider-title {
 	font-size: 24px;
