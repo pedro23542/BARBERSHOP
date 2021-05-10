@@ -6,7 +6,7 @@
 
 import Swiper from 'swiper/bundle';
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.reviews__slider.swiper-container', {
 
   slidesPerView: 1,
   navigation: {
@@ -21,7 +21,7 @@ const swiper = new Swiper('.swiper-container', {
 
 });
 
-const swiper2 = new Swiper('.swiper-container', {
+const swiper2 = new Swiper('.info-block__slider.swiper-container', {
 
   slidesPerView: 1,
   spaceBetween: 0,
@@ -36,5 +36,25 @@ const swiper2 = new Swiper('.swiper-container', {
     disableOnInteraction: true
  },
 
+
+});
+
+//Product-view slider
+
+const productPageSlider = new Swiper('.product-view__slider-item.swiper-container', {
+  slidesPerView: 1,
+ });
+
+let sliderNavItems = document.querySelectorAll('.product-view__slider-small-img');
+console.log(sliderNavItems);
+sliderNavItems.forEach((item, index) => {
+
+  item.setAttribute('data-index', index);
+
+  item.addEventListener('click', (e) => {
+    const index = e.currentTarget.dataset.index;
+   console.log(index);
+   productPageSlider.slideTo(index);
+  });
 
 });
