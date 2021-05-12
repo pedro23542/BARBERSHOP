@@ -13,8 +13,34 @@
 	.advantages__item-content{
 		padding: 0 15px;
 	}
+	.ourwork__rewiews{
+		display: block;
+	}
+	.ourwork__rewiews-item.ourwork__main-item{}
+	.ourwork__rewiews-item.ourwork__main-item .ourwork__rewiews-content{
+		width: calc(100% - 270px);
+	}
+	.ourwork__rewiews-item{
+    	flex-direction: row;
+   		width: 100%;
+   		&:not(:last-child){
+   			margin-bottom: 40px;
+   		}
+	}
+	.ourwork__rewiews-img{
+   		 height: 294px;
+   		 min-width: 270px;
+		img{
+			width: 100%;
+    		height: 100%;
+		}
+	}
+	.ourwork__rewiews-content{
+		width: 100%;
+		height: auto;
+	}
 }
-// 940
+// 950
 
 @media(max-width: 920px){
 	.reviews__slider-content{
@@ -24,6 +50,7 @@
 	.reviews__slider-item{
 		border: 1px solid #e5ddd5;
 	}
+
 	
 }
 // 920px
@@ -72,6 +99,40 @@
 	}
 }
 // 880
+
+@media(max-width: 850px){
+	.price__content{
+		display: block;
+	}
+	.price__clock{
+    	max-width: initial;
+    	padding: 21px 27px;
+    	justify-content: flex-start;
+    	margin-top: 10px;
+	}
+	.price__clock-inner{
+    	width: 100%;
+    	text-align: center;
+    	img{
+    		height: 71px;
+    		margin-bottom: 0px;
+    		float: left;
+    	}
+	}
+	.price__clock-time,
+	.price__clock-discount{
+		display: inline-block;
+    	font-size: 30px;
+    	line-height: 71px;
+    	text-transform: uppercase;
+    	@include f700;
+	}
+	.price{
+		padding-bottom: 56px;
+	}
+}
+// 850
+
 @media(max-width: 800px){
 	.reviews__slider-img-inner{
 		width: 80px;
@@ -183,9 +244,42 @@
 	.footer__inner{
 		padding-bottom: 30px;
 	}
+	.ourwork{
+		.headline{
+			margin-bottom: 38px;
+		}
+		.headline-text{
+			margin-left: 0;
+		}
+	}
+	.ourwork__rewiews-item.ourwork__main-item{
+		.ourwork__rewiews-img{
+			width: 270px;
+		}
+	}
+	.photo-page{
+		.header__body{
+			height: 213px;
+    		padding-top: 40px;
+		}
+		.logo img{
+			height: 100px;
+		}
+	}
 }
 // 768
-
+@media(max-width: 750px){
+	.ourwork__rewiews-content{
+		padding: 25px 22px 25px;
+	}
+	.ourwork__rewiews-title{
+		margin-bottom: 21px;
+	}
+	.ourwork__rewiews-title{
+		margin-bottom: 10px;
+	}
+}
+// 750
 @media(max-width: 720px){
 	.advantages__info-content{
 		display: block;
@@ -340,9 +434,72 @@
 			margin-bottom: 35px;
 		}
 	}
-
+	.ourwork__rewiews-text{
+		margin-bottom: 0;
+	}
 }
 // 720
+@media(max-width: 670px){
+	.price{
+		padding: 35px 0 30px;
+	}
+	.price__title{
+		margin-bottom: 20px;
+    	font-size: 30px;
+	}
+	.price__table-number{
+		display: none;
+	}
+	.price__clock-time,
+	.price__clock-discount{
+		font-size: 20px;
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: 400;
+	}
+}
+@media(max-width: 650px){
+	.ourwork__rewiews-item.ourwork__main-item,
+	.ourwork__rewiews-item{
+		display: block;
+    	height: auto;
+    	max-width: 280px;
+    	margin: 0 auto;
+    	margin-bottom: 30px;
+	}
+	.ourwork__rewiews-item.ourwork__main-item .ourwork__rewiews-img{
+		width: 100%;
+    	height: 480px;
+    	img{
+    		display: block;
+    	}
+	}
+	.ourwork__rewiews-item.ourwork__main-item .ourwork__rewiews-content{
+		width: auto;
+    	padding-bottom: 5px;
+    	width: 100%;
+	}
+	.ourwork__rewiews-text{
+		margin-bottom: 15px;
+	}
+	.ourwork__rewiews-img{
+		height: 176px;
+    	width: 100%;
+    	img{
+    		object-fit: cover;
+    	}
+	}
+	.ourwork__rewiews-item:not(:last-child){
+		margin-bottom: 30px;
+	}
+	.ourwork{
+		padding-bottom: 34px;
+	}
+	.ourwork__rewiews-content{
+		min-height: 190px;
+	}
+}
+// 650
+
 @media(max-width: 610px){
 	.reviews{
 		.swiper-button-next,
@@ -355,6 +512,39 @@
 	}
 }
 // 610
+
+@media(max-width: 550px){
+	.price__table-row {
+		border:none;
+		margin-bottom: 15px;
+	}
+	.price__table-row > *{
+		padding: 0;
+		border: none;
+	}
+	.price__table-type{
+		order: -2;
+		width: auto;
+	}
+	.price__table-sum{
+		order: -1;
+    	margin-left: auto;
+    	text-align: right;
+    	width: auto;
+    	color: #e7e7e7;
+	}
+	.price__table-row{
+		flex-wrap: wrap;
+	}
+	.price__table-options{
+		width: 100%;
+	    color: #e7e7e7;
+	}
+	.price__clock{
+		padding: 11px 11px;
+	}
+}
+// 550
 
 @media(max-width: 520px){
 	.advantages__item{
@@ -386,9 +576,14 @@
 	.footer__inner{
 		justify-content: center;
 	}
-	
+	.ourwork{
+		.headline-btn{
+			display: none;
+		}
+	}
 }
 // 520
+
 @media(max-width: 420px){
 	.advantages__info{
 		position: initial;
@@ -429,5 +624,24 @@
 	.reviews__slider-item{
 		border: none;
 	}
+	.price__clock-time{
+		display: block;
+    	line-height: 19px;
+    	margin-top: 14px;
+	}
+	.price__clock-discount{
+		line-height: 19px;
+	}
+	.ourwork{
+		padding-top: 23px;
+		.headline{
+			margin-bottom: 23px;
+		    justify-content: center;
+		}
+		.headline-text{
+			font-size: 30px;
+		}
+	}
+
 }
 // 420
