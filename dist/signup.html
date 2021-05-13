@@ -11,9 +11,9 @@
 	</head>
 	<body>
 		<header class="header photo-page">
-			<div class="header__line">
+		<div class="header__line">
 				<div class="container">
-					<nav class="nav">
+					<nav class="nav  nav--switcher">
 						<ul class="header__nav">
 							<li class="bottom-line"><a class="header__links" href="#">Главная</a></li>
 							<li><a class="header__links" href="#">Наши работы</a></li>
@@ -25,7 +25,27 @@
 							<a href="#">ВОЙТИ</a>
 						</div>
 					</nav>
-				</div>
+					<nav class="mobile-nav nav">
+						
+						<ul class="header__nav">
+							<li><a class="header__links" href="#">Главная</a>
+								<div class="mobile-nav__btn">
+									<div class="mobile-nav__btn-inner">
+							<div></div>
+							<div></div>
+							<div></div>
+							</div>
+						</div>
+							</li>
+						</ul>
+						<ul class="mobile-nav__sublist">
+								<li><a class="header__links" href="#">Наши работы</a></li>
+								<li><a class="header__links" href="#">Записаться</a></li>
+								<li><a class="header__links" href="#">Контакты</a></li>
+								<li><a class="header__links" href="#">HTML Academy</a></li>
+								<li><a class="header__login" href="#">ВОЙТИ</a></li>
+							</ul>
+				</nav>
 			</div>
 			<div class="header__body">
 				<div class="container">
@@ -48,12 +68,13 @@
 							<input class="signup__form-text" type="text" value="Фамилия">
 							<input class="signup__form-text" type="text" value="Отчество">
 						</div>
-						<div class="signup__form-row">
+						<div class="signup__form-row signup__form-row--adaptive">
 							<input class="signup__form-mail-tel" type="tel" value="Контактный телефон">
 							<input class="signup__form-mail-tel" type="email" value="Контактный e-mail">
 						</div>
 						<textarea class="signup__form-textarea" placeholder="Доп. информация для мастера"></textarea>
 					</div>
+					
 					<div class="signup__form-title"><span>ВЫберите модель бороды:</span></div>
 					<div class="signup__models">
 						<div class="signup__models-item">

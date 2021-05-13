@@ -11,9 +11,9 @@
 	</head>
 	<body class="body-bg">
 		<header class="header">
-			<div class="header__line">
+		<div class="header__line">
 				<div class="container">
-					<nav class="nav">
+					<nav class="nav  nav--switcher">
 						<ul class="header__nav">
 							<li class="bottom-line"><a class="header__links" href="#">Главная</a></li>
 							<li><a class="header__links" href="#">Наши работы</a></li>
@@ -25,7 +25,27 @@
 							<a href="#">ВОЙТИ</a>
 						</div>
 					</nav>
-				</div>
+					<nav class="mobile-nav nav">
+						
+						<ul class="header__nav">
+							<li><a class="header__links" href="#">Главная</a>
+							<div class="mobile-nav__btn">
+								<div class="mobile-nav__btn-inner">
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="mobile-nav__sublist">
+						<li><a class="header__links" href="#">Наши работы</a></li>
+						<li><a class="header__links" href="#">Записаться</a></li>
+						<li><a class="header__links" href="#">Контакты</a></li>
+						<li><a class="header__links" href="#">HTML Academy</a></li>
+						<li><a class="header__login" href="#">ВОЙТИ</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		<div class="page-title">
@@ -45,18 +65,19 @@
 			<div class="container">
 				<div class="product-view__inner">
 					<div class="product-view__slider">
+						<div class="product-view__slider-inner">
 						<div class="product-view__slider-item swiper-container">
 							<div class="swiper-wrapper">
-							<div class="product-view__slider-items swiper-slide">
-								<img src="images/content/product_view1.jpg" alt="">
+								<div class="product-view__slider-items swiper-slide">
+									<img src="images/content/product_view1.jpg" alt="">
+								</div>
+								<div class="product-view__slider-items swiper-slide">
+									<img src="images/content/bsh1.jpg" alt="">
+								</div>
+								<div class="product-view__slider-items swiper-slide">
+									<img src="images/content/bsh1.jpg" alt="">
+								</div>
 							</div>
-							<div class="product-view__slider-items swiper-slide">
-								<img src="images/content/product_view1.jpg" alt="">
-							</div>
-							<div class="product-view__slider-items swiper-slide">
-								<img src="images/content/product_view1.jpg" alt="">
-							</div>
-						</div>
 						</div>
 						<div class="product-view__slider-small">
 							<div class="product-view__slider-small-img">
@@ -68,6 +89,7 @@
 							<div class="product-view__slider-small-img">
 								<img src="images/content/product_view1.jpg" alt="">
 							</div>
+						</div>
 						</div>
 					</div>
 					<div class="product-view__content">
@@ -82,7 +104,7 @@
 							<div class="products__items-price">
 								<span>2 900 ₽</span>
 								<div class="products__items-buy">КУПИТЬ</div>
-							</div>		
+							</div>
 						</div>
 						<div class="product-view__list">
 							<span class="product-view__list-title">В набор входят:</span>

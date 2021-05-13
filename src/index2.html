@@ -13,7 +13,7 @@
 		<header class="header">
 			<div class="header__line">
 				<div class="container">
-					<nav class="nav">
+					<nav class="nav  nav--switcher">
 						<ul class="header__nav">
 							<li class="bottom-line"><a class="header__links" href="#">Главная</a></li>
 							<li><a class="header__links" href="#">Наши работы</a></li>
@@ -25,7 +25,27 @@
 							<a href="#">ВОЙТИ</a>
 						</div>
 					</nav>
-				</div>
+					<nav class="mobile-nav nav">
+						
+						<ul class="header__nav">
+							<li><a class="header__links" href="#">Главная</a>
+							<div class="mobile-nav__btn">
+								<div class="mobile-nav__btn-inner">
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="mobile-nav__sublist">
+						<li><a class="header__links" href="#">Наши работы</a></li>
+						<li><a class="header__links" href="#">Записаться</a></li>
+						<li><a class="header__links" href="#">Контакты</a></li>
+						<li><a class="header__links" href="#">HTML Academy</a></li>
+						<li><a class="header__login" href="#">ВОЙТИ</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		<main class="inex2-main">
@@ -72,27 +92,27 @@
 					<div class="info-block__col">
 						<div class="info-block__title">ФОТОГАЛЕРЕЯ</div>
 						<div class="info-block__slider-wrapper">
-						<div class="info-block__slider swiper-container">
-							<div class="swiper-wrapper">
-								<div class="info-block__slider-img swiper-slide" swiper-slide>
-									<img src="images/content/bsh1.jpg" alt="">
-								</div>
-								<div class="info-block__slider-img swiper-slide">
-									<img src="images/content/bsh2.jpeg" alt="">
-								</div>
-								<div class="info-block__slider-img swiper-slide">
-									<img src="images/content/bsh3.jpg" alt="">
+							<div class="info-block__slider swiper-container">
+								<div class="swiper-wrapper">
+									<div class="info-block__slider-img swiper-slide" swiper-slide>
+										<img src="images/content/bsh1.jpg" alt="">
+									</div>
+									<div class="info-block__slider-img swiper-slide">
+										<img src="images/content/bsh2.jpeg" alt="">
+									</div>
+									<div class="info-block__slider-img swiper-slide">
+										<img src="images/content/bsh3.jpg" alt="">
+									</div>
 								</div>
 							</div>
-						</div>
 							<div class="info-block__slider-btn">
 								<button class="info-block__btn-left" href="#">НАЗАД</button>
 								<button class="info-block__btn-right" href="#">ВПЕРЕД</button>
 							</div>
-							</div>
+						</div>
 					</div>
 				</section>
-				<section class="info-block">
+	<!-- 			<section class="info-block">
 					<div class="info-block__col style-line">
 						<div class="info-block__title">НОВОСТИ</div>
 						<p class="info-block__text">
@@ -109,12 +129,11 @@
 						<a class="info-block__btn" href="#">ОБРАТНАЯ СВЯЗЬ</a>
 					</div>
 					<div class="info-block__col">
-
 						<div class="signup-data">
-						<div class="info-block__title">ЗАПИСАТЬСЯ</div>
-						<p class="info-block__text">
-							УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
-						</p>
+							<div class="info-block__title">ЗАПИСАТЬСЯ</div>
+							<p class="info-block__text">
+								УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+							</p>
 							<form>
 								<div class="signup-data__grid">
 									<div class="signup-data__cell">
@@ -137,10 +156,9 @@
 								<input class="signup-data__btn" type="submit" value="ОТПРАВИТЬ">
 							</form>
 						</div>
-
 						
 					</div>
-				</section>
+				</section> -->
 			</div>
 			
 		</main>
